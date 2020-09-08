@@ -16,6 +16,7 @@ print('A soma é ', s2)
 # Ao declarar a varíavel do input como inteiro, a soma funciona normalmente.
 
 # Exemplo: Mostrar idade de alguém daqui 1 ano
+# Impressão com máscara versão 1 → .format
 nome = (input('Escreva seu nome: '))
 idade = int(input('Informe a sua idade: '))
 altura = (input('Informe sua altura: '))
