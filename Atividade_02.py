@@ -8,6 +8,13 @@ elif ((n2 < n1) and (n2 < n3)):
     print(f'{n2} é o menor.')
 else:
     print(f'{n3} é o menor.')
+'''
+Execução 06:
+Digite um valor: 3
+Digite um valor: 1
+Digite um valor: 2
+1 é o menor.
+'''
 
 # Exercício 07: Faça um programa que leia o salário de um funcionário, calcule e mostre o novo salário, sabendo-se que este sofreu um aumento de:
 # 10% para quem recebe até R$ 3500,00
@@ -17,6 +24,11 @@ if (salario > 3500):
     print(f'Seu novo salário será de {round(salario*1.05,2)} reais.')
 else:
     print(f'Seu novo salário será de {round(salario*1.1,2)} reais.')
+'''
+Execução 07:
+Digite o salário: 3000
+Seu novo salário será de 3300.0 reais.
+'''
 
 # Exercício 09: Escreva um programa que leia o código de um determinado produto e mostre a sua classificação.
 codigo = int(input('Digite o código do produto: '))
@@ -32,6 +44,11 @@ elif (8 <= codigo <= 15):
     print('Limpeza e utensílios domésticos.')
 else:
     print('Código inválido.')
+'''
+Execução 09:
+Digite o código do produto: 6
+Vestuário.
+'''
 
 # Desafio 1: Fazer um jogo de par e ímpar
 # Para todos os itens abaixo, O COMPUTADOR:
@@ -55,6 +72,14 @@ elif (((pc+user) % 2 != 0) and (escolha == 1)):
     print(f'A soma de {pc}+{user}={pc+user} é ímpar! Você ganhou, {nome}!')
 else:
     print(f'Números escolhidos: {pc} e {user}, resultado {pc+user}. Que pena, você perdeu!')
+'''
+Execução Desafio 01:
+Digite o seu nome: Fulano de Tal
+Seja bem-vindo(a) ao jogo de par ou ímpar, Fulano de Tal!
+Digite 1 para escolher ímpar e 2 para escolher par: 1
+Digite um número de sua escolha para o jogo: 5
+A soma de 4+5=9 é ímpar! Você ganhou, Fulano de Tal!
+'''
 
 # Desafio 2: Fazer um jogo de JOKENPÔ:
 # 1 = pedra
@@ -83,3 +108,10 @@ elif (user == pc):
     print(f'Empate! Você e o computador escolheram o mesmo elemento.')
 else:
     print(f'Que pena, você perdeu!')
+'''
+Execução Desafio 02:
+Digite o seu nome: Fulana de Tal
+Seja bem-vindo(a) ao jokenpô, Fulana de Tal!
+Digite 1 para escolher pedra, 2 para escolher papel e 3 para escolher tesoura: 2
+Empate! Você e o computador escolheram o mesmo elemento.
+'''
