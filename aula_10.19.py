@@ -1,4 +1,7 @@
-# Contar até 5 com for
+# while e for
+
+# Sintaxe 'for': for variável in range(início, fim, passo):
+# Contar até 6 com for
 for a in range(1, 6):
     print(a)
 print('FIM\n')
@@ -59,3 +62,52 @@ while (num2 != -1):
     sum1 = sum1 + num2
 print(f'A soma dos números foi {sum1+1}.')      # +1 para excluir o -1 de quebra de loop
 print('FIM\n')
+
+# Pares e ímpares de 1 a 10 com for
+for f in range(0, 11, 2):       # Contando zero como par
+    print(f)
+print('FIM\n')
+
+for g in range(1, 11, 2):
+    print(g)
+print('FIM\n')
+
+# Lista com for
+lista_de_alunos = ['Lucca', 'Amanda', 'João', 'Maria', 'Fulano']
+for i in lista_de_alunos:
+    print(i)
+print('FIM\n')
+
+# Contagem descrescente com for
+for h in range(10, 0, -1):      # Ver Linha 3
+    print(h)
+print('FIM\n')
+
+# Exemplo de range com len()
+lista_len = ['Pasta', 'Sabonete', 'Xampu']
+for i in range(0, len(lista_len)):
+    print(f'Índice: {i}')
+for i in lista_len:
+    print(f'Produtos: {i}')
+
+# Exemplo 01: Fatorial com for
+num3 = int(input('Digite um número para calcular o fatorial: '))
+fatorial = 1
+for j in range(1, num3 + 1):    # n + 1
+    fatorial = fatorial * j
+print(f'{num3}! = {fatorial}')
+
+# Exemplo 02: Usar variáveis dentro do laço
+inicio = int(input('Digite o início: '))
+fim = int(input('Digite o fim: '))
+passo = int(input('Digite o passo: '))
+for contador in range(inicio, fim, passo):
+    print(contador)
+print('FIM\n')
+
+# Exemplo 03: Somar valores digitados dentro do for
+soma = 0
+for k in range(0, 4):       # Pedirá 1 número e o adicionará à 'soma' por iteração, até o fim = 4
+    num4 = int(input('Digite um número: '))
+    soma = soma + num4
+print(f'O valor da soma é {soma}.\nFIM\n')
